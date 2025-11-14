@@ -11,31 +11,40 @@
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "Documentation"
+site_name = "Numerical Linear Algebra"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_description
-site_description = "A new project generated from the default template project."
+site_description = "A complete Numerical Linear Algebra course website with lectures, exercises, code examples, and all related materials."
 
 # The site_author attribute. This is used in the HTML head element.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_author
-site_author = "<your name here>"
+site_author = "Anar Abdullayev"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
 # Read more: https://zensical.org/docs/setup/basics/#site_url
-#site_url = "https://www.example.com/"
+site_url = "https://abdanar.github.io/numlinalg/"
 
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
-copyright = """
-Copyright &copy; 2025 The authors
-"""
+copyright = "Copyright &copy; 2025 Anar Abdullayev"
+
+# If your documentation is related to source code, Zensical provides the ability 
+# to display information about the project's repository as part of the static site, 
+# including stars and forks.
+repo_name = "abdanar/numlinalg"
+repo_url = "https://github.com/abdanar/numlinalg"
+
+# If the repository URL points to a valid GitHub, GitLab or Bitbucket repository, 
+# Zensical provides a setting called edit_uri, which resolves to the subfolder where 
+# your documentation is hosted.
+edit_uri = "edit/main/docs/"
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
 # If you decide not to define a navigation here then Zensical will simply
@@ -44,10 +53,10 @@ Copyright &copy; 2025 The authors
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+nav = [
+   { "Get started" = "index.md" },
+   { "Markdown in 5min" = "markdown.md" },
+]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -93,7 +102,7 @@ Copyright &copy; 2025 The authors
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
-#favicon = "assets/images/favicon.png"
+favicon = "lucide/grid-3x3"
 
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
@@ -122,13 +131,13 @@ features = [
     # will generate an edit button for the page. This works for common
     # repository hosting services.
     # https://zensical.org/docs/setup/repository/#code-actions
-    #"content.action.edit",
+    "content.action.edit",
 
     # If you have a repository configured and turn feature this on, Zensical
     # will generate a button that allows the user to view the Markdown
     # code for the current page.
     # https://zensical.org/docs/setup/repository/#code-actions
-    #"content.action.view",
+    "content.action.view",
 
     # Code annotations allow you to add an icon with a tooltip to your
     # code blocks to provide explanations at crucial points.
@@ -168,7 +177,7 @@ features = [
     # Turn on this feature to expand all collapsible sections in the
     # navigation sidebar by default.
     # https://zensical.org/docs/setup/navigation/#navigation-expansion
-    # "navigation.expand",
+    "navigation.expand",
 
     # This feature turns on navigation elements in the footer that allow the
     # user to navigate to a next or previous page.
@@ -194,12 +203,12 @@ features = [
     # In order to provide a better user experience on slow connections when
     # using instant navigation, a progress indicator can be enabled.
     # https://zensical.org/docs/setup/navigation/#progress-indicator
-    #"navigation.instant.progress",
+    "navigation.instant.progress",
 
     # When navigation paths are activated, a breadcrumb navigation is rendered
     # above the title of each page
     # https://zensical.org/docs/setup/navigation/#navigation-path
-    "navigation.path",
+    #"navigation.path",
 
     # When pruning is enabled, only the visible navigation items are included
     # in the rendered HTML, reducing the size of the built site by 33% or more.
@@ -209,12 +218,12 @@ features = [
     # When sections are enabled, top-level sections are rendered as groups in
     # the sidebar for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-sections
-    "navigation.sections",
+    #"navigation.sections",
 
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+    "navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
@@ -257,15 +266,32 @@ features = [
 # Read more:
 # - https://zensical.org/docs/setup/colors/
 # ----------------------------------------------------------------------------
-[[project.theme.palette]]
-scheme = "default"
-toggle.icon = "lucide/sun"
-toggle.name = "Switch to dark mode"
 
+# Palette toggle for automatic mode
 [[project.theme.palette]]
-scheme = "slate"
-toggle.icon = "lucide/moon"
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
 toggle.name = "Switch to light mode"
+primary = "green"
+accent = "green"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "default"
+toggle.icon = "lucide/toggle-left"
+toggle.name = "Switch to dark mode"
+primary = "green"
+accent = "green"
+
+# Palette toggle for dark mode
+[[project.theme.palette]] # dark mode
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/toggle-right"
+toggle.name = "Switch to light mode"
+primary = "green"
+accent = "green"
 
 # ----------------------------------------------------------------------------
 # In the "font" subsection you can configure the fonts used. By default, fonts
@@ -292,15 +318,38 @@ toggle.name = "Switch to light mode"
 # - https://zensical.org/docs/setup/logo-and-icons
 # - https://zensical.org/docs/authoring/icons-emojis/#search
 # ----------------------------------------------------------------------------
-#[project.theme.icon]
-#logo = "lucide/smile"
-#repo = "lucide/smile"
+[project.theme.icon]
+logo = "lucide/grid-3x3"
+repo = "lucide/grid-3x3"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
-#[[project.extra.social]]
-#icon = "fontawesome/brands/github"
-#link = "https://github.com/user/repo"
+
+[project.extra]
+alternate = [
+    { name = "English", link = "/en/", lang = "en" },
+    { name = "Azərbaycanca", link = "/az/", lang = "az" }
+]
+
+[project.theme.icon.tag]
+default = "lucide/hash"
+lecture_notes = "fontawesome/chalkboard"
+homeworks = "fontawesome/chalkboard"
+coding = "fontawesome/code"
+tutorials = "fontawesome/chalkboard"
+study_materials = "fontawesome/chalkboard"
+
+[project.extra.tags]
+lecture_notes = "ln"
+homeworks = "hmw"
+coding = "code"
+tutorials = "tut"
+study_materials = "ref"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/abdanar/numlinalg"
+
 
 
