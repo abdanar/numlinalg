@@ -53,14 +53,24 @@ edit_uri = "edit/main/docs/"
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
+
 nav = [
-  { "Home" = "index.md" },
+  { "About" = [
+      "about/syllabus.md",
+      "about/course_overview.md",
+      "about/how_to_use_this_site.md",
+  ]},
   { "Notes" = [
-    "notes/introduction.md",
-    "notes/linearsys.md",
+      "notes/introduction.md",
+      "notes/linearsys.md",
+  ]},
+  { "Exercises" = [
+      "exercises/ex1.md",
+      "exercises/ex2.md",
   ]},
   { "Resources" = "references.md" },
 ]
+
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of

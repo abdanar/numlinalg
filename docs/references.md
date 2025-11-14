@@ -1,3 +1,5 @@
 ---
-icon: lucide/rocket
+icon: lucide/library
 ---
+
+# Resources
