@@ -332,19 +332,6 @@ alternate = [
     { name = "Azərbaycanca", link = "/az/", lang = "az" }
 ]
 
-[project.theme.icon.tag]
-default = "lucide/hash"
-lecture_notes = "fontawesome/chalkboard"
-homeworks = "fontawesome/chalkboard"
-tutorials = "fontawesome/chalkboard"
-study_materials = "fontawesome/chalkboard"
-
-[project.extra.tags]
-lecture_notes = "ln"
-homeworks = "hmw"
-tutorials = "tut"
-study_materials = "ref"
-
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
 link = "https://github.com/abdanar/numlinalg"
