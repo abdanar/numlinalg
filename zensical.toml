@@ -336,14 +336,12 @@ alternate = [
 default = "lucide/hash"
 lecture_notes = "fontawesome/chalkboard"
 homeworks = "fontawesome/chalkboard"
-coding = "fontawesome/code"
 tutorials = "fontawesome/chalkboard"
 study_materials = "fontawesome/chalkboard"
 
 [project.extra.tags]
 lecture_notes = "ln"
 homeworks = "hmw"
-coding = "code"
 tutorials = "tut"
 study_materials = "ref"
 
