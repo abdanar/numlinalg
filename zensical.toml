@@ -272,8 +272,6 @@ features = [
 media = "(prefers-color-scheme)"
 toggle.icon = "lucide/sun-moon"
 toggle.name = "Switch to light mode"
-primary = "green"
-accent = "green"
 
 # Palette toggle for light mode
 [[project.theme.palette]]
@@ -281,8 +279,6 @@ media = "(prefers-color-scheme: dark)"
 scheme = "default"
 toggle.icon = "lucide/toggle-left"
 toggle.name = "Switch to dark mode"
-primary = "green"
-accent = "green"
 
 # Palette toggle for dark mode
 [[project.theme.palette]] # dark mode
@@ -290,8 +286,9 @@ media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/toggle-right"
 toggle.name = "Switch to light mode"
-primary = "green"
-accent = "green"
+
+palette.primary = "green"
+palette.accent = "green"
 
 # ----------------------------------------------------------------------------
 # In the "font" subsection you can configure the fonts used. By default, fonts
