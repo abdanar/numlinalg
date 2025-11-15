@@ -55,14 +55,19 @@ edit_uri = "edit/main/docs/"
 # Read more: https://zensical.org/docs/setup/navigation/
 
 nav = [
+  { "Home" = "home.md"},
   { "About" = [
       "about/syllabus.md",
       "about/course_overview.md",
       "about/how_to_use_this_site.md",
   ]},
   { "Notes" = [
-      "notes/introduction.md",
-      "notes/linearsys.md",
+    {"Matrix Analysis" = [
+        "notes/chap1/norms.md"
+    ]},
+    {"Orthogonalization and Least Squares" = [
+        "notes/chap2/householder.md"
+    ]},
   ]},
   { "Exercises" = [
       "exercises/ex1.md",

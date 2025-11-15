@@ -1,5 +1,5 @@
 ---
-icon: lucide/book-open-check
+icon: lucide/map
 ---
 
 # How to use this site

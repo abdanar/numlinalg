@@ -2,6 +2,6 @@
 icon: lucide/file-code-corner
 ---
 
-# Exercise 2
+# Norms
 
 ## this is for coding questions
