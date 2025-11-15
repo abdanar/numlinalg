@@ -77,7 +77,6 @@ nav = [
   { "Resources" = "references.md" },
 ]
 
-
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
 # CSS files.
@@ -335,12 +334,6 @@ repo = "lucide/grid-3x3"
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
-
-[project.extra]
-alternate = [
-    { name = "English", link = "/en/", lang = "en" },
-    { name = "Azərbaycanca", link = "/az/", lang = "az" }
-]
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
