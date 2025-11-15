@@ -1,6 +1,5 @@
 ---
-icon: lucide/file-code-corner
----
+icon: lucide/file-code
 
 # Exercise 2
 

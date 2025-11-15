@@ -1,5 +1,5 @@
 ---
-icon: lucide/file-code-corner
+icon: lucide/file-code
 ---
 
 # Householder transformation

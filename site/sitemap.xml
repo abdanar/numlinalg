@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://abdanar.github.io/numlinalg/</loc>
+        <loc>https://abdanar.github.io/numlinalg/home/</loc>
+      </url>
+      <url>
+        <loc>https://abdanar.github.io/numlinalg/about/syllabus/</loc>
+      </url>
+      <url>
+        <loc>https://abdanar.github.io/numlinalg/about/course_overview/</loc>
+      </url>
+      <url>
+        <loc>https://abdanar.github.io/numlinalg/about/how_to_use_this_site/</loc>
+      </url>
+      <url>
+        <loc>https://abdanar.github.io/numlinalg/notes/chap1/norms/</loc>
+      </url>
+      <url>
+        <loc>https://abdanar.github.io/numlinalg/notes/chap2/householder/</loc>
+      </url>
+      <url>
+        <loc>https://abdanar.github.io/numlinalg/exercises/ex1/</loc>
+      </url>
+      <url>
+        <loc>https://abdanar.github.io/numlinalg/exercises/ex2/</loc>
+      </url>
+      <url>
+        <loc>https://abdanar.github.io/numlinalg/references/</loc>
       </url>
 </urlset>
