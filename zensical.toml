@@ -55,7 +55,7 @@ edit_uri = "edit/main/docs/"
 # Read more: https://zensical.org/docs/setup/navigation/
 
 nav = [
-  { "Home" = "home.md"},
+  { "Home" = "index.md"},
   { "About" = [
       "about/syllabus.md",
       "about/course_overview.md",
