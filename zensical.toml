@@ -66,7 +66,8 @@ nav = [
         "notes/chap1/norms.md"
     ]},
     {"Orthogonalization and Least Squares" = [
-        "notes/chap2/householder.md"
+        "notes/chap2/householder.md",
+        "gramschalg.md",
     ]},
   ]},
   { "Exercises" = [

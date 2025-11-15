@@ -12,10 +12,8 @@
         <meta name="author" content="Anar Abdullayev">
       
       
-        <link rel="canonical" href="https://abdanar.github.io/numlinalg/references/">
+        <link rel="canonical" href="https://abdanar.github.io/numlinalg/notes/chap2/Gram-Schmidt%20Algorithm/">
       
-      
-        <link rel="prev" href="../exercises/ex2/">
       
       
       
@@ -26,24 +24,24 @@
         
       
       
-      <link rel="icon" href="../lucide/grid-3x3">
+      <link rel="icon" href="../../../lucide/grid-3x3">
       <meta name="generator" content="zensical-0.0.7">
     
     
       
-        <title>Resources - Numerical Linear Algebra</title>
+        <title>Gram-Schmidt Algorithm - Numerical Linear Algebra</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.21338c02.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/modern/main.21338c02.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
   
@@ -91,7 +89,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -116,7 +114,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#resources" class="md-skip">
+        <a href="#gram-schmidt-algorithm" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +128,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Numerical Linear Algebra" class="md-header__button md-logo" aria-label="Numerical Linear Algebra" data-md-component="logo">
+    <a href="../../.." title="Numerical Linear Algebra" class="md-header__button md-logo" aria-label="Numerical Linear Algebra" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-grid-3x3" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
@@ -150,7 +148,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Resources
+              Gram-Schmidt Algorithm
             
           </span>
         </div>
@@ -260,7 +258,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../home/" class="md-tabs__link">
+      <a href="../../../home/" class="md-tabs__link">
         
   
   Home
@@ -278,7 +276,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../about/syllabus/" class="md-tabs__link">
+        <a href="../../../about/syllabus/" class="md-tabs__link">
           
   
   About
@@ -304,7 +302,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../notes/chap1/norms/" class="md-tabs__link">
+        <a href="../../chap1/norms/" class="md-tabs__link">
           
   
   Notes
@@ -326,7 +324,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../exercises/ex1/" class="md-tabs__link">
+        <a href="../../../exercises/ex1/" class="md-tabs__link">
           
   
   Exercises
@@ -341,11 +339,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../../references/" class="md-tabs__link">
         
   
   Resources
@@ -377,7 +373,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Numerical Linear Algebra" class="md-nav__button md-logo" aria-label="Numerical Linear Algebra" data-md-component="logo">
+    <a href="../../.." title="Numerical Linear Algebra" class="md-nav__button md-logo" aria-label="Numerical Linear Algebra" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-grid-3x3" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
@@ -407,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../home/" class="md-nav__link">
+      <a href="../../../home/" class="md-nav__link">
         
   
   
@@ -496,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/syllabus/" class="md-nav__link">
+      <a href="../../../about/syllabus/" class="md-nav__link">
         
   
   
@@ -526,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/course_overview/" class="md-nav__link">
+      <a href="../../../about/course_overview/" class="md-nav__link">
         
   
   
@@ -556,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/how_to_use_this_site/" class="md-nav__link">
+      <a href="../../../about/how_to_use_this_site/" class="md-nav__link">
         
   
   
@@ -707,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notes/chap1/norms/" class="md-nav__link">
+      <a href="../../chap1/norms/" class="md-nav__link">
         
   
   
@@ -799,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notes/chap2/householder/" class="md-nav__link">
+      <a href="../householder/" class="md-nav__link">
         
   
   
@@ -900,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercises/ex1/" class="md-nav__link">
+      <a href="../../../exercises/ex1/" class="md-nav__link">
         
   
   
@@ -930,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercises/ex2/" class="md-nav__link">
+      <a href="../../../exercises/ex2/" class="md-nav__link">
         
   
   
@@ -964,19 +960,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../references/" class="md-nav__link">
         
   
   
@@ -994,7 +981,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1033,7 +1019,7 @@
                 
                   
   
-    <a href="https://github.com/abdanar/numlinalg/edit/main/docs/references.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/abdanar/numlinalg/edit/main/docs/notes/chap2/Gram-Schmidt Algorithm.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-pen" viewBox="0 0 24 24"><path d="M12.5 22H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v9.5"/><path d="M14 2v4a2 2 0 0 0 2 2h4M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg>
     </a>
@@ -1042,14 +1028,14 @@
     
       
     
-    <a href="https://github.com/abdanar/numlinalg/raw/main/docs/references.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/abdanar/numlinalg/raw/main/docs/notes/chap2/Gram-Schmidt Algorithm.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-code-2" viewBox="0 0 24 24"><path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4"/><path d="M14 2v4a2 2 0 0 0 2 2h4M5 12l-3 3 3 3M9 18l3-3-3-3"/></svg>
     </a>
   
 
 
-<h1 id="resources">Resources</h1>
+<h1 id="gram-schmidt-algorithm">Gram-Schmidt Algorithm</h1>
 
 
 
@@ -1058,9 +1044,6 @@
 
 
 
-
-  
-  
 
 
 
@@ -1087,28 +1070,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../exercises/ex2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Exercise 2">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Exercise 2
-              </div>
-            </div>
-          </a>
-        
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1159,12 +1120,12 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.action.edit","content.action.view","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tabs","navigation.top","navigation.tracking","search.highlight"],"search":"../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.action.edit","content.action.view","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.expand","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tabs","navigation.top","navigation.tracking","search.highlight"],"search":"../../../assets/javascripts/workers/search.5e1f2129.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.6b62de02.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6b62de02.min.js"></script>
       
-        <script src="../assets/javascript/extra.js"></script>
+        <script src="../../../assets/javascript/extra.js"></script>
       
     
   </body>
